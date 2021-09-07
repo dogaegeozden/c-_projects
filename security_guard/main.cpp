@@ -12,7 +12,16 @@ int main() {
 
     if ( age <= 18 ) {
         cout<<"Go away!";
-    } else if ( age > 18 ) {
+    } else if ( age >= 60 ) {
+        cout<<"Aren't you too old grandpa.\nCan I see your id?\n";
+        cin>>idCheck;
+        if ( idCheck.find("yes")!=-1 || idCheck.find("Yes")!=-1 ) {
+            cout<<"Alright get in.\n";
+        } else {
+            cout<<"Get out of the line. You can't get in.\n";
+            cin.ignore();
+        }
+    } else {
         cout<<"Can I see your id?\n";
         cin>>idCheck;
         if ( idCheck.find("yes")!=-1 || idCheck.find("Yes")!=-1 ) {
