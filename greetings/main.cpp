@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-    char name[75];
+    string name;
     cout<<"Please enter your name here: ";
     cin>>name;
     cin.ignore();
