@@ -18,7 +18,7 @@ int main() {
         if ( idCheck.find("yes")!=-1 || idCheck.find("Yes")!=-1 ) {
             cout<<"Alright get in.\n";
         } else {
-            cout<<"Get out of the line. You can't get in.\n";
+            cout<<"I'm sorry. Can't let you get in without id.\n";
             cin.ignore();
         }
     } else {
