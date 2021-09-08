@@ -5,7 +5,7 @@ Here are my c++ applications. Most of them are console based.
 Inorder to run this applications and see how they are working you need a compiler. My recommendation is code blocks because it's open source and available in windows/linux/mac. 
 
 ### What is compiler
-Computers understand only one language and that language consists of sets of instructions made of ones and zeros. This computer language is appropriately called machine language. The binary binary code. It's a language created with base 2 number system. Ex: 0000 = 0, 0001 = 1, 0010 = 2, 0011 = 3. Or, 0 = False, 1 = True. This programming language is very hard for humans to process but easier for machines. So people create programming languages such as C and C++ so developers and inspect each others code more easily. This is where compilers gets in to business. Because compilers gets your human readable code and converts it into binary code so computer can process it.
+Computers understand only one language and that language consists of sets of instructions made of ones and zeros. This computer language is appropriately called machine language. The binary binary code. It's a language created with base 2 number system. Ex: 0000 = 0, 0001 = 1, 0010 = 2, 0011 = 3. Or, 0 = False, 1 = True. This programming language is very hard for humans to process but easier for machines. So people created programming languages, such as C and, C++ so, developers can inspect each others code more easily. This is where compilers gets in to business. Because compilers gets your human readable code and converts it into binary code so computer can process it.
 
 ### Step 1: Download the compiler
 Go to this website: http://www.codeblocks.org/downloads
