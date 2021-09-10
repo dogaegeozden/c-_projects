@@ -27,11 +27,9 @@ int dividionFunc (int a, int b) {
 template<typename Map>
 void PrintMap(Map& m)
 {
-    cout << "[ ";
     for (auto &item : m) {
-        cout << item.first << ":" << item.second << " ";
+        cout << item.first << ":" << item.second << "\n";
     }
-    cout << "]\n";
 }
 
 int main()
