@@ -1,5 +1,6 @@
 #include <iostream>
 #include <math.h>
+#include <map>
 
 using namespace std;
 
@@ -23,18 +24,27 @@ int dividionFunc (int a, int b) {
     return a;
 }
 
+template<typename Map>
+void PrintMap(Map& m)
+{
+    cout << "[ ";
+    for (auto &item : m) {
+        cout << item.first << ":" << item.second << " ";
+    }
+    cout << "]\n";
+}
+
 int main()
 {
-    string operators[] = {"+","-","*","/","^"};
-    int sOfO = sizeof(operators)/sizeof(operators[0]);
-    int o;
+    map<string, string> operatorsMap = {{"Multiplication", "*",},
+                                {"Division", "/",},
+                                {"Addition", "+",},
+                                {"Subtraction", "-",},
+                                {"Power", "^",}};
 
-    cout<<"List of operators:\n";
-    for ( o=0 ; o<sOfO-1; o++){
-        cout<<operators[o]<<", ";
-    }
-
-    cout<<"and "<<operators[sOfO-1]<<"\n\n"<<endl;
+    cout<<"List Of Operators"<<endl;
+    PrintMap(operatorsMap);
+    cout<<"\n";
 
     float n1;
     cout<<"Enter your first number here: ";
@@ -49,19 +59,19 @@ int main()
         cin>>so;
         cout<<"Enter your second number here: ";
         cin>>n2;
-        if ( so == "+" ) {
+        if ( so == operatorsMap["Addition"] ) {
             n1 = additionFunc (n1, n2);
             cout<<"Result = "<<n1<<"\n";
-        } else if ( so == "-" ) {
+        } else if ( so == operatorsMap["Subtraction"] ) {
             n1 = subtractionFunc (n1, n2);
             cout<<"Result = "<<n1<<"\n";
-        } else if ( so == "*" ) {
+        } else if ( so == operatorsMap["Multiplication"] ) {
             n1 = multiplicationFunc (n1, n2);
             cout<<"Result = "<<n1<<"\n";
-        } else if ( so == "/" ) {
+        } else if ( so == operatorsMap["Division"] ) {
             n1 = dividionFunc (n1, n2);
             cout<<"Result = "<<n1<<"\n";
-        } else if ( so == "^" ) {
+        } else if ( so == operatorsMap["Power"] ) {
             n1 = pow (n1, n2);
             cout<<"Result = "<<n1<<"\n";
         }
