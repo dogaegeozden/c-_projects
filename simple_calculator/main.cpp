@@ -4,22 +4,22 @@
 
 using namespace std;
 
-int additionFunc (int a, int b) {
+float additionFunc (float a, float b) {
     a = a + b;
     return a;
 }
 
-int subtractionFunc (int a, int b) {
+float subtractionFunc (float a, float b) {
     a = a - b;
     return a;
 }
 
-int multiplicationFunc (int a, int b) {
+float multiplicationFunc (float a, float b) {
     a = a * b;
     return a;
 }
 
-int dividionFunc (int a, int b) {
+float dividionFunc (float a, float b) {
     a = a / b;
     return a;
 }
