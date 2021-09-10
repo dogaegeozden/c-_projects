@@ -25,11 +25,20 @@ int dividionFunc (int a, int b) {
 
 int main()
 {
+    string operators[] = {"+","-","*","/","^"};
+    int sOfO = sizeof(operators)/sizeof(operators[0]);
+    int o;
+
+    cout<<"List of operators:\n";
+    for ( o=0 ; o<sOfO-1; o++){
+        cout<<operators[o]<<", ";
+    }
+
+    cout<<"and "<<operators[sOfO-1]<<"\n\n"<<endl;
+
     float n1;
     cout<<"Enter your first number here: ";
     cin>>n1;
-
-    string operators[] = {"+","-","*","/"};
 
     string so;
     float n2;
@@ -65,8 +74,3 @@ int main()
         }
     }
 }
-
-
-
-
-
