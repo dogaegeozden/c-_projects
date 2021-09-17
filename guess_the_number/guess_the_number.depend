@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1631768185 source:/home/christopher/Documents/guess_the_number/guess_the_number/main.cpp
+	<iostream>
+	<stdlib.h>
+	<map>
+
